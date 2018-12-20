@@ -22,9 +22,9 @@ func main() {
 		body := p.Content
 
 		// Now we use the email library
-		// Compose the email
+		// Compose the email by feeding in Write.as post and adding the To/From Addresses
 		m := email.NewMessage(subject, body)
-		m.From = mail.Address{Name: "CJ Eller", Address: "cjeller1592@gmail.com"}
+		m.From = mail.Address{Name: "Something", Address: "something@gmail.com"}
 		m.To = []string{"cjeller1592@gmail.com"}
 
 		// Authorize and send!
